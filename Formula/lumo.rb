@@ -5,9 +5,9 @@ class Lumo < Formula
   head "https://github.com/anmonteiro/lumo.git"
 
   devel do
-    url "https://github.com/anmonteiro/lumo/archive/1.0.0-alpha1.tar.gz"
-    version "1.0.0-alpha1"
-    sha256 "4fc2682f430ea449a5bacb63ec6f9b7f59d9feef91f431894831d055d1c3bd70"
+    url "https://github.com/anmonteiro/lumo/archive/1.0.0-alpha2.tar.gz"
+    version "1.0.0-alpha2"
+    sha256 "386100d9ead8b16b4e6b67cf3f036e78227cac9e7bad1fa886fe954241023296"
   end
 
   depends_on "boot-clj" => :build
@@ -16,8 +16,8 @@ class Lumo < Formula
 
   def install
     ENV["BOOT_JVM_OPTIONS"] = "-Duser.home=#{ENV["HOME"]}"
-    system "boot", "test"
     system "boot", "release-ci"
+    system "boot", "test"
     bin.install "build/lumo"
   end
 

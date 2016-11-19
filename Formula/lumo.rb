@@ -5,9 +5,9 @@ class Lumo < Formula
   head "https://github.com/anmonteiro/lumo.git"
 
   devel do
-    url "https://github.com/anmonteiro/lumo/archive/1.0.0-alpha2.tar.gz"
-    version "1.0.0-alpha2"
-    sha256 "386100d9ead8b16b4e6b67cf3f036e78227cac9e7bad1fa886fe954241023296"
+    url "https://github.com/anmonteiro/lumo/archive/1.0.0-alpha3.tar.gz"
+    version "1.0.0-alpha3"
+    sha256 "9a87662ddebec81869ade7d341f9bc492dc29bedf19725d4bc8f454ce83a6a32"
   end
 
   depends_on "boot-clj" => :build
